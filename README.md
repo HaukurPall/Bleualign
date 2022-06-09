@@ -11,6 +11,16 @@ Project Homepage: http://github.com/rsennrich/bleualign
 
 This program is free software; you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation
 
+This fork
+------------
+This for has been slightly modified so that the alignment indices are returned as a Python object along with the texts, i.e.
+```
+a = Aligner(options)
+a.mainloop()
+_output_src, _output_target, idxs = a.results()
+```
+The change has not been tested using multiple threads and is probably not thread safe.
+
 GENERAL INFO
 ------------
 
